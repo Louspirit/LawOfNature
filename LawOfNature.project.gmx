@@ -15,6 +15,7 @@
     <sprite>sprites\spr_bush</sprite>
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_arbre_mechant</sprite>
+    <sprite>sprites\spr_tall_grass</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -29,6 +30,7 @@
     <object>objects\obj_bush</object>
     <object>objects\obj_player</object>
     <object>objects\obj_arbre_mechant</object>
+    <object>objects\obj_tall_grass</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_level1</room>
