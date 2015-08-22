@@ -21,7 +21,7 @@
     <object>objects\obj_lapin</object>
     <object>objects\obj_decor</object>
     <object>objects\obj_enemy</object>
-    <object>objects\object2</object>
+    <object>objects\obj_tree</object>
     <object>objects\obj_bush</object>
     <object>objects\obj_player</object>
     <object>objects\obj_arbre_mechant</object>
