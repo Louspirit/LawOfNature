@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="obj_player" xview="200" yview="200" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="180" vborder="180" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="obj_player" xview="0" yview="0" wview="1024" hview="728" xport="0" yport="0" wport="1024" hport="728" hborder="180" vborder="180" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_player" x="448" y="448" name="inst_B61E7D27" locked="0" code="" scaleX="0.119999997317791" scaleY="0.106666669249535" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="448" y="448" name="inst_B61E7D27" locked="0" code="" scaleX="0.231231227517128" scaleY="0.240356087684631" colour="4294967295" rotation="0"/>
     <instance objName="obj_arbre_mechant" x="576" y="256" name="inst_23001F85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree" x="64" y="288" name="inst_8528B0C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree" x="32" y="224" name="inst_2B9105D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -127,13 +127,6 @@
     <instance objName="obj_tall_grass" x="864" y="800" name="inst_B6CA2BC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tall_grass" x="704" y="800" name="inst_665DBFB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tall_grass" x="800" y="800" name="inst_71509BE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tall_grass" x="224" y="256" name="inst_7E6093D6" locked="0" code="" scaleX="0.100000001490116" scaleY="0.100000001490116" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tall_grass" x="-64" y="-192" name="inst_91ED91F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tall_grass" x="-96" y="-160" name="inst_FAEF36BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tall_grass" x="-96" y="-160" name="inst_9116A764" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tall_grass" x="-96" y="-160" name="inst_FDCEB6F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tall_grass" x="-96" y="-160" name="inst_2F25F002" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tall_grass" x="-64" y="-160" name="inst_D078750E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
