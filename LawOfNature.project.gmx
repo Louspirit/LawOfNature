@@ -4,7 +4,11 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound_eat_enemy</sound>
+    <sound>sound\sound_eaten</sound>
+    <sound>sound\sound_roar</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_lapin</sprite>
     <sprite>sprites\spr_tree1</sprite>
@@ -12,6 +16,7 @@
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_arbre_mechant</sprite>
     <sprite>sprites\spr_player_imobile</sprite>
+    <sprite>sprites\spr_tall_grass</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -26,6 +31,7 @@
     <object>objects\obj_bush</object>
     <object>objects\obj_player</object>
     <object>objects\obj_arbre_mechant</object>
+    <object>objects\obj_tall_grass</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_level1</room>
