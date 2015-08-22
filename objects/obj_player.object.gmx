@@ -105,6 +105,54 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>dos</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>mouvement</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="obj_enemy">
       <action>
@@ -459,6 +507,8 @@ if(xp&gt;xpMaxLvl){
             <kind>1</kind>
             <string>y+=vitesse;
 image_speed=0.3;
+dos=0;
+mouvement=1;
 sprite_index=spr_player;
 </string>
           </argument>
@@ -484,7 +534,14 @@ sprite_index=spr_player;
             <kind>1</kind>
             <string>x+=vitesse;
 image_speed=0.3;
-sprite_index=spr_player;
+mouvement=1;
+if(dos=1){
+    sprite_index=spr_player_dos;
+}
+else{
+    sprite_index=spr_player;
+}
+
 </string>
           </argument>
         </arguments>
@@ -509,7 +566,8 @@ sprite_index=spr_player;
             <kind>1</kind>
             <string>y-=vitesse;
 image_speed=0.3;
-sprite_index=spr_player;
+dos=1;
+sprite_index=spr_player_dos;
 </string>
           </argument>
         </arguments>
@@ -534,7 +592,12 @@ sprite_index=spr_player;
             <kind>1</kind>
             <string>x-=vitesse;
 image_speed=0.3;
-sprite_index=spr_player;
+if (dos = 1){
+    sprite_index=spr_player_dos;
+}else{
+    sprite_index=spr_player;
+}
+
 </string>
           </argument>
         </arguments>
@@ -557,7 +620,15 @@ sprite_index=spr_player;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sprite_index = spr_player_imobile;
+            <string>if(dos=1)
+{
+    sprite_index = spr_player_dos_imobile;
+}
+else
+{
+    sprite_index = spr_player_imobile;
+}
+
 </string>
           </argument>
         </arguments>
