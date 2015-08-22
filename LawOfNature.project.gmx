@@ -4,7 +4,11 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound_eat_enemy</sound>
+    <sound>sound\sound_roar</sound>
+    <sound>sound\sound_eaten</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_lapin</sprite>
     <sprite>sprites\spr_tree1</sprite>
@@ -23,7 +27,6 @@
     <object>objects\obj_enemy</object>
     <object>objects\obj_tree</object>
     <object>objects\obj_bush</object>
-    <object>objects\obj_player</object>
     <object>objects\obj_arbre_mechant</object>
   </objects>
   <rooms name="rooms">
