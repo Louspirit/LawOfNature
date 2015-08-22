@@ -84,7 +84,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_tree">
+    <event eventtype="4" ename="object2">
       <action>
         <libid>1</libid>
         <id>101</id>
@@ -95,13 +95,13 @@
         <exetype>1</exetype>
         <functionname>action_move</functionname>
         <codestring></codestring>
-        <whoName>other</whoName>
+        <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>000000000</string>
+            <string>000010000</string>
           </argument>
           <argument>
             <kind>0</kind>

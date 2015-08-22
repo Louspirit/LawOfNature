@@ -7,15 +7,18 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_lapin</sprite>
-    <sprite>sprites\spr_tree</sprite>
+    <sprite>sprites\spr_tree1</sprite>
+    <sprite>sprites\spr_bush</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\bkg_grass</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_lapin</object>
-    <object>objects\obj_tree</object>
+    <object>objects\object2</object>
+    <object>objects\obj_bush</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_level1</room>
