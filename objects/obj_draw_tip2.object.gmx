@@ -118,7 +118,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>"Eating smaller monsters strenghtens your appetite."</string>
+            <string>"Eating smaller monsters increases your appetite."</string>
           </argument>
           <argument>
             <kind>0</kind>
