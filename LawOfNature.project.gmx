@@ -23,6 +23,11 @@
     <sprite>sprites\spr_tree1</sprite>
     <sprite>sprites\spr_bush</sprite>
     <sprite>sprites\spr_tall_grass</sprite>
+    <sprite>sprites\spr_bt_restart</sprite>
+    <sprite>sprites\spr_bt_quit</sprite>
+    <sprite>sprites\spr_lbl_eaten</sprite>
+    <sprite>sprites\spr_lbl_theend</sprite>
+    <sprite>sprites\spr_congrats</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -53,10 +58,21 @@
       <object>objects\obj_draw_tip1</object>
       <object>objects\obj_draw_intro2</object>
       <object>objects\obj_draw_tip2</object>
+      <object>objects\obj_draw_victory</object>
+      <object>objects\obj_bt_restart</object>
+      <object>objects\obj_draw_eaten</object>
+      <object>objects\obj_draw_theend</object>
+      <object>objects\obj_draw_congrats</object>
+      <object>objects\obj_bt_quit</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_level1</room>
+    <room>rooms\rm_level2</room>
+    <rooms name="screens">
+      <room>rooms\room_theEnd</room>
+      <room>rooms\rm_gameOver</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
