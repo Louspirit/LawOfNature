@@ -10,17 +10,19 @@
     <sound>sound\sound_roar</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_lapin</sprite>
+    <sprites name="character">
+      <sprite>sprites\Spr_lapin_cote_gauche</sprite>
+      <sprite>sprites\spr_player</sprite>
+      <sprite>sprites\spr_player_dos_imobile</sprite>
+      <sprite>sprites\spr_player_dos</sprite>
+      <sprite>sprites\spr_lapin</sprite>
+      <sprite>sprites\spr_arbre_mechant</sprite>
+      <sprite>sprites\spr_player_imobile</sprite>
+      <sprite>sprites\spr_lapin_cote_droit</sprite>
+    </sprites>
     <sprite>sprites\spr_tree1</sprite>
     <sprite>sprites\spr_bush</sprite>
-    <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_arbre_mechant</sprite>
-    <sprite>sprites\spr_player_imobile</sprite>
     <sprite>sprites\spr_tall_grass</sprite>
-    <sprite>sprites\spr_player_dos</sprite>
-    <sprite>sprites\spr_player_dos_imobile</sprite>
-    <sprite>sprites\Spr_lapin_cote_gauche</sprite>
-    <sprite>sprites\spr_lapin_cote_droit</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -34,18 +36,24 @@
     <font>fonts\ft_Intro</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_lapin</object>
-    <object>objects\obj_decor</object>
-    <object>objects\obj_enemy</object>
-    <object>objects\obj_tree</object>
-    <object>objects\obj_bush</object>
-    <object>objects\obj_player</object>
-    <object>objects\obj_arbre_mechant</object>
-    <object>objects\obj_tall_grass</object>
-    <object>objects\obj_draw_intro1</object>
-    <object>objects\obj_draw_tip1</object>
-    <object>objects\obj_draw_tip2</object>
-    <object>objects\obj_draw_intro2</object>
+    <objects name="character">
+      <object>objects\obj_player</object>
+      <object>objects\obj_arbre_mechant</object>
+      <object>objects\obj_enemy</object>
+      <object>objects\obj_lapin</object>
+    </objects>
+    <objects name="landscape">
+      <object>objects\obj_decor</object>
+      <object>objects\obj_tall_grass</object>
+      <object>objects\obj_bush</object>
+      <object>objects\obj_tree</object>
+    </objects>
+    <objects name="text">
+      <object>objects\obj_draw_intro1</object>
+      <object>objects\obj_draw_tip1</object>
+      <object>objects\obj_draw_intro2</object>
+      <object>objects\obj_draw_tip2</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_level1</room>
