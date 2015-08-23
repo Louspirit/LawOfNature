@@ -25,12 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed=0.3;
-if ((direction &gt; 90 and direction &lt; 270)){
+            <string>image_speed=0.2;
+if ((direction &gt;= 135 and direction &lt; 225)){
     sprite_index = spr_lapin_cote_gauche;
 }
-if ((direction &gt;= 270 or direction &lt;= 90)) {
+if ((direction &gt;= 315 or direction &lt; 45)) {
     sprite_index = spr_lapin_cote_droit;
+}
+if(direction &gt;=225 and direction&lt;315){
+    sprite_index = spr_lapin_face;
+}
+if(direction &gt;= 45 and direction &lt;135){
+    sprite_index = spr_lapin_dos;
 }
 </string>
           </argument>

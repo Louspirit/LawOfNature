@@ -19,6 +19,8 @@
       <sprite>sprites\spr_arbre_mechant</sprite>
       <sprite>sprites\spr_player_imobile</sprite>
       <sprite>sprites\spr_lapin_cote_droit</sprite>
+      <sprite>sprites\spr_lapin_face</sprite>
+      <sprite>sprites\spr_lapin_dos</sprite>
     </sprites>
     <sprite>sprites\spr_tree1</sprite>
     <sprite>sprites\spr_bush</sprite>
