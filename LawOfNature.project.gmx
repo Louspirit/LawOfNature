@@ -27,6 +27,12 @@
     <background>background\bkg_grass</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\drawText.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\ft_Intro</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_lapin</object>
     <object>objects\obj_decor</object>
@@ -36,6 +42,10 @@
     <object>objects\obj_player</object>
     <object>objects\obj_arbre_mechant</object>
     <object>objects\obj_tall_grass</object>
+    <object>objects\obj_draw_intro1</object>
+    <object>objects\obj_draw_tip1</object>
+    <object>objects\obj_draw_tip2</object>
+    <object>objects\obj_draw_intro2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_level1</room>
