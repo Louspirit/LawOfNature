@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Variables
 lvl = 1;
-spd = 4;
+spd = 5;
 xpCap = 3;
 xp = 0;
 back = 0;
@@ -247,6 +247,7 @@ if(xp&gt;=xpMaxLvl){
     lvl +=1;
     xp = xp - xpMaxLvl;
     if(lvl==2){
+        spd=4;
         if(back==0){
             sprite_index =  spr_player2_face;
          }else{
