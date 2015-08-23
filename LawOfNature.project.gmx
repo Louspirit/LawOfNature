@@ -10,7 +10,7 @@
     <sound>sound\sound_roar</sound>
   </sounds>
   <sprites name="sprites">
-    <sprites name="character">
+    <sprites name="Characters">
       <sprite>sprites\spr_lapin_cote_gauche</sprite>
       <sprite>sprites\spr_player</sprite>
       <sprite>sprites\spr_player_dos_imobile</sprite>
@@ -25,14 +25,14 @@
       <sprite>sprites\spr_player1_face_imobile</sprite>
       <sprite>sprites\spr_player1_face</sprite>
     </sprites>
-    <sprites name="landscape">
+    <sprites name="Objects">
       <sprite>sprites\spr_tall_grass</sprite>
       <sprite>sprites\spr_tree1</sprite>
       <sprite>sprites\spr_bush</sprite>
       <sprite>sprites\spr_feuille</sprite>
       <sprite>sprites\spr_fleur</sprite>
     </sprites>
-    <sprites name="label">
+    <sprites name="Label">
       <sprite>sprites\spr_congrats</sprite>
       <sprite>sprites\spr_theend</sprite>
       <sprite>sprites\spr_bt_quit</sprite>
@@ -42,8 +42,8 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\background0</background>
-    <background>background\bkg_grass</background>
+    <background>background\bg_grass1</background>
+    <background>background\bg_grass2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -53,14 +53,14 @@
     <font>fonts\ft_Intro</font>
   </fonts>
   <objects name="objects">
-    <objects name="character">
+    <objects name="Character">
       <object>objects\obj_player</object>
       <object>objects\obj_arbre_mechant</object>
       <object>objects\obj_champignon</object>
       <object>objects\obj_enemy</object>
       <object>objects\obj_lapin</object>
     </objects>
-    <objects name="landscape">
+    <objects name="Objects">
       <object>objects\obj_decor</object>
       <object>objects\obj_tall_grass</object>
       <object>objects\obj_bush</object>
@@ -68,7 +68,7 @@
       <object>objects\obj_feuille</object>
       <object>objects\obj_fleur</object>
     </objects>
-    <objects name="text">
+    <objects name="Texts">
       <object>objects\obj_draw_intro1</object>
       <object>objects\obj_draw_tip1</object>
       <object>objects\obj_draw_intro2</object>
