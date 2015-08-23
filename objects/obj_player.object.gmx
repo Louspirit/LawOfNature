@@ -394,7 +394,7 @@ global.monsterCounter -= 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>action_create_object(obj_draw_victory ,x-300,y-10);
+            <string>action_create_object(obj_draw_victory , view_xview[0]+ (view_wview[0] / 2), view_yview[0] + (view_hview[0] / 2));
 </string>
           </argument>
         </arguments>
