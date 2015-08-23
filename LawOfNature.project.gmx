@@ -27,6 +27,8 @@
       <sprite>sprites\spr_tall_grass</sprite>
       <sprite>sprites\spr_tree1</sprite>
       <sprite>sprites\spr_bush</sprite>
+      <sprite>sprites\spr_feuille</sprite>
+      <sprite>sprites\spr_fleur</sprite>
     </sprites>
     <sprites name="label">
       <sprite>sprites\spr_congrats</sprite>
@@ -61,6 +63,8 @@
       <object>objects\obj_tall_grass</object>
       <object>objects\obj_bush</object>
       <object>objects\obj_tree</object>
+      <object>objects\obj_feuille</object>
+      <object>objects\obj_fleur</object>
     </objects>
     <objects name="text">
       <object>objects\obj_draw_intro1</object>
