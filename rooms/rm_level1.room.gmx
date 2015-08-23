@@ -129,7 +129,7 @@
     <instance objName="obj_tall_grass" x="800" y="800" name="inst_71509BE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_draw_intro1" x="256" y="256" name="inst_97383C6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_draw_intro2" x="256" y="256" name="inst_B0AFA4A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_draw_tip1" x="256" y="448" name="inst_6391EC0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_draw_tip1" x="128" y="384" name="inst_6391EC0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_draw_tip2" x="32" y="544" name="inst_F06FE644" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tall_grass" x="608" y="800" name="inst_CBA08D9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tall_grass" x="512" y="800" name="inst_51AC922A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
