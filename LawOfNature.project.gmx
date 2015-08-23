@@ -11,7 +11,7 @@
   </sounds>
   <sprites name="sprites">
     <sprites name="character">
-      <sprite>sprites\Spr_lapin_cote_gauche</sprite>
+      <sprite>sprites\spr_lapin_cote_gauche</sprite>
       <sprite>sprites\spr_player</sprite>
       <sprite>sprites\spr_player_dos_imobile</sprite>
       <sprite>sprites\spr_player_dos</sprite>
@@ -49,7 +49,7 @@
     </objects>
     <objects name="landscape">
       <object>objects\obj_decor</object>
-      <object>objects\obj_tall_grass</object>
+	  <object>objects\obj_tall_grass</object>
       <object>objects\obj_bush</object>
       <object>objects\obj_tree</object>
     </objects>
