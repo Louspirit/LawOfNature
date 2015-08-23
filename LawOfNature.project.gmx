@@ -22,6 +22,8 @@
       <sprite>sprites\spr_lapin_face</sprite>
       <sprite>sprites\spr_lapin_dos</sprite>
       <sprite>sprites\spr_champignon</sprite>
+      <sprite>sprites\spr_player1_face_imobile</sprite>
+      <sprite>sprites\spr_player1_face</sprite>
     </sprites>
     <sprites name="landscape">
       <sprite>sprites\spr_tall_grass</sprite>
