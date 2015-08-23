@@ -27,7 +27,9 @@
     <sprite>sprites\spr_bt_quit</sprite>
     <sprite>sprites\spr_lbl_eaten</sprite>
     <sprite>sprites\spr_lbl_theend</sprite>
+    <sprite>sprites\spr_lbl_victory</sprite>
     <sprite>sprites\spr_congrats</sprite>
+    <sprite>sprites\spr_champignon</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -44,12 +46,13 @@
     <objects name="character">
       <object>objects\obj_player</object>
       <object>objects\obj_arbre_mechant</object>
+      <object>objects\obj_champignon</object>
       <object>objects\obj_enemy</object>
       <object>objects\obj_lapin</object>
     </objects>
     <objects name="landscape">
       <object>objects\obj_decor</object>
-	  <object>objects\obj_tall_grass</object>
+      <object>objects\obj_tall_grass</object>
       <object>objects\obj_bush</object>
       <object>objects\obj_tree</object>
     </objects>
@@ -70,7 +73,7 @@
     <room>rooms\rm_level1</room>
     <room>rooms\rm_level2</room>
     <rooms name="screens">
-      <room>rooms\room_theEnd</room>
+      <room>rooms\rm_theEnd</room>
       <room>rooms\rm_gameOver</room>
     </rooms>
   </rooms>

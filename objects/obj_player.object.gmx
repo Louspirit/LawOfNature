@@ -402,7 +402,7 @@ global.monsterCounter -= 1;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>y+10</string>
+            <string>y</string>
           </argument>
         </arguments>
       </action>
