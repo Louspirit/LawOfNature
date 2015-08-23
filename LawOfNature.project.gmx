@@ -24,6 +24,7 @@
       <sprite>sprites\spr_champignon</sprite>
       <sprite>sprites\spr_player1_face_imobile</sprite>
       <sprite>sprites\spr_player1_face</sprite>
+      <sprite>sprites\spr_poisson</sprite>
     </sprites>
     <sprites name="Objects">
       <sprite>sprites\spr_tall_grass</sprite>
@@ -31,6 +32,8 @@
       <sprite>sprites\spr_bush</sprite>
       <sprite>sprites\spr_feuille</sprite>
       <sprite>sprites\spr_fleur</sprite>
+      <sprite>sprites\spr_arbreSec</sprite>
+      <sprite>sprites\spr_border_sand</sprite>
     </sprites>
     <sprites name="Label">
       <sprite>sprites\spr_congrats</sprite>
@@ -44,6 +47,7 @@
   <backgrounds name="background">
     <background>background\bg_grass1</background>
     <background>background\bg_grass2</background>
+    <background>background\bkg_sand</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -59,6 +63,7 @@
       <object>objects\obj_champignon</object>
       <object>objects\obj_enemy</object>
       <object>objects\obj_lapin</object>
+      <object>objects\obj_poisson</object>
     </objects>
     <objects name="Objects">
       <object>objects\obj_decor</object>
@@ -67,6 +72,8 @@
       <object>objects\obj_tree</object>
       <object>objects\obj_feuille</object>
       <object>objects\obj_fleur</object>
+      <object>objects\obj_border_sand</object>
+      <object>objects\obj_dry_tree</object>
     </objects>
     <objects name="Texts">
       <object>objects\obj_draw_intro1</object>
@@ -84,6 +91,7 @@
   <rooms name="rooms">
     <room>rooms\rm_level1</room>
     <room>rooms\rm_level2</room>
+    <room>rooms\rm_level3</room>
     <rooms name="screens">
       <room>rooms\rm_theEnd</room>
       <room>rooms\rm_gameOver</room>
