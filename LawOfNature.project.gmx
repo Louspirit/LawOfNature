@@ -26,6 +26,10 @@
       <sprite>sprites\spr_player2_face</sprite>
       <sprite>sprites\spr_player2_face_imobile</sprite>
       <sprite>sprites\spr_player_evolution_to_2</sprite>
+      <sprite>sprites\spr_player3_face_imobile</sprite>
+      <sprite>sprites\spr_player3_face</sprite>
+      <sprite>sprites\spr_player3_dos</sprite>
+      <sprite>sprites\spr_player3_dos_imobile</sprite>
     </sprites>
     <sprites name="Objects">
       <sprite>sprites\spr_tall_grass</sprite>
@@ -101,7 +105,7 @@
     <room>rooms\rm_level1</room>
     <room>rooms\rm_level2</room>
     <room>rooms\rm_level3</room>
-    <room>rooms\rm_level4</room>
+    <room>rooms\rm_level5</room>
     <room>rooms\rm_level5</room>
     <rooms name="screens">
       <room>rooms\rm_theEnd</room>
