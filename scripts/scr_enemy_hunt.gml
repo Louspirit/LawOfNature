@@ -9,6 +9,7 @@ if (alerted = true ) && (dis <= aggroRange){
     }
     //Head toward player
     mp_potential_step(obj_player.x,obj_player.y,spd,true);
+    alerted = false;
 }
 else{
     state = scr_enemy_cool;
