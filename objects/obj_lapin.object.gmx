@@ -27,14 +27,14 @@
             <kind>1</kind>
             <string>//Sprites
 image_speed=0.2;
-if ((direction &gt;= 135 and direction &lt; 225)){
+/*if ((direction &gt;= 135 and direction &lt; 225)){
     if(state==scr_enemy_flee){
         sprite_index = spr_lapin_cote_droit;
     }else{
         sprite_index = spr_lapin_cote_gauche;
     }
 }
-if ((direction &gt;= 315 or direction &lt; 45)) {
+if ((direction &gt;= 315 and direction &lt; 45)) {
     if(state==scr_enemy_flee){
         sprite_index = spr_lapin_cote_gauche;
     }else{
@@ -54,6 +54,21 @@ if(direction &gt;= 45 and direction &lt;135){
     }else{
         sprite_index = spr_lapin_dos;
     }
+}*/
+if(state==scr_enemy_flee){
+switch(direction div 90){
+case 0 :  sprite_index = spr_lapin_cote_gauche;break;
+case 1 : sprite_index = spr_lapin_face;break;
+case 2 : sprite_index = spr_lapin_cote_droit;break;
+case 3 : sprite_index = spr_lapin_dos;break;
+}
+}else{
+switch(direction div 90){
+case 0 :  sprite_index = spr_lapin_cote_droit;break;
+case 1 : sprite_index = spr_lapin_dos;break;
+case 2 : sprite_index = spr_lapin_cote_gauche;break;
+case 3 : sprite_index = spr_lapin_face;break;
+}
 }
 
 //States
