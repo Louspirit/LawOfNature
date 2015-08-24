@@ -71,11 +71,8 @@ side =0;
           <argument>
             <kind>1</kind>
             <string>//Player mouvement
-var xDirection, yDirection;
-xDirection = keyboard_check(vk_right) - keyboard_check(vk_left);
-yDirection = keyboard_check(vk_down) - keyboard_check(vk_up);
-x += xDirection * spd;
-y += yDirection * spd;
+hspeed = spd * (keyboard_check(vk_right) - keyboard_check(vk_left));
+vspeed = spd * (keyboard_check(vk_down) - keyboard_check(vk_up));
 
 //Sprite speed
 image_speed=0.3;

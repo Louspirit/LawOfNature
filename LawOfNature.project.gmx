@@ -52,6 +52,9 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\drawText.gml</script>
+    <script>scripts\scr_enemy_cool.gml</script>
+    <script>scripts\scr_enemy_hunt.gml</script>
+    <script>scripts\scr_enemy_flee.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ft_Intro</font>

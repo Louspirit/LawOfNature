@@ -11,30 +11,6 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>50</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -50,16 +26,17 @@
           <argument>
             <kind>1</kind>
             <string>direction = random(360);
-//image_angle = direction-90;
+state = scr_enemy_cool;
+
 spd=1;
 xp=1;
 lvl=0;
+aggroRange = 240;
+alerted = false;
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>301</id>
@@ -84,6 +61,8 @@ lvl=0;
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -103,7 +82,30 @@ lvl=0;
             <string>speed = 1;
 tmp = random(360);
 direction = tmp;
-//image_angle = tmp-90;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//States
+script_execute(state);
 </string>
           </argument>
         </arguments>
@@ -161,7 +163,7 @@ direction = tmp;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_lapin">
+    <event eventtype="4" ename="obj_enemy">
       <action>
         <libid>1</libid>
         <id>101</id>

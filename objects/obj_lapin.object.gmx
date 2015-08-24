@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed=0.2;
+            <string>//States
+script_execute(state);
+//Sprites
+image_speed=0.2;
 if ((direction &gt;= 135 and direction &lt; 225)){
     sprite_index = spr_lapin_cote_gauche;
 }
@@ -39,6 +42,32 @@ if(direction &gt;= 45 and direction &lt;135){
     sprite_index = spr_lapin_dos;
 }
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>spd</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>3</string>
           </argument>
         </arguments>
       </action>
