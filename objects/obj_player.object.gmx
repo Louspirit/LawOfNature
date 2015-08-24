@@ -115,6 +115,21 @@ if(keyboard_check(vk_nokey))//Player stop moving
         }
     }
 }
+
+if(lvl=2 &amp;&amp; sprite_index != spr_player2_dos &amp;&amp; sprite_index!= spr_player2_dos_imobile &amp;&amp; 
+    sprite_index!=spr_player2_face &amp;&amp; sprite_index!=spr_player2_face_imobile){
+     if(back==0){
+        if(!collision_rectangle(25, 28, 25, 28, obj_decor,true,true)){
+        spd=4;
+        sprite_index =  spr_player2_face_imobile;
+       }
+     }
+     if(back=1){
+       if(!collision_rectangle(25,28,25,28,obj_decor,true,true)){
+            sprite_index =  spr_player2_dos_imobile;
+         }
+     }
+}
     
 
 </string>
@@ -253,14 +268,15 @@ xpMaxLvl = lvl*xpCap;
 if(xp&gt;=xpMaxLvl){
     lvl +=1;
     xp = xp - xpMaxLvl;
-    if(lvl==2){
+    /*if(lvl==2){
+        
         spd=4;
         if(back==0){
             sprite_index =  spr_player2_face;
          }else{
             sprite_index =  spr_player2_dos_imobile;
          }
-    }
+    }*/
 }
 global.monsterCounter -= 1;
 </string>
