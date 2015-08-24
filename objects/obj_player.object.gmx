@@ -32,6 +32,7 @@ xpCap = 3;
 xp = 0;
 back = 0;
 side =0;
+transform=0;
 </string>
           </argument>
         </arguments>
@@ -70,7 +71,33 @@ side =0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Player mouvement
+            <string>/*if(lvl=2 &amp;&amp; transform = 1 &amp;&amp; sprite_index != spr_player2_dos &amp;&amp; sprite_index!= spr_player2_dos_imobile &amp;&amp; 
+    sprite_index!=spr_player2_face &amp;&amp; sprite_index!=spr_player2_face_imobile){*/
+var mask_hauteur, mask_largeur;
+if(sprite_index=spr_player_evolution_to_2){
+     if(back==0){
+     sprite_evolve =  spr_player2_face_imobile;
+     mask_hauteur=sprite_get_bbox_bottom(sprite_evolve)-sprite_get_bbox_top(sprite_evolve);
+     //mask_hauteur=56;
+     mask_largeur=sprite_get_bbox_right(sprite_evolve)-sprite_get_bbox_left(sprite_evolve);
+     //mask_largeur=50;
+     
+        //if(!collision_rectangle(x-25+2, y-28+2, x+25+2, y+28+2, obj_decor,true,true)){
+     }
+     if(back=1){
+     sprite_evolve =  spr_player2_dos_imobile;
+     mask_hauteur=sprite_get_bbox_bottom(sprite_evolve)-sprite_get_bbox_top(sprite_evolve);
+     mask_largeur=sprite_get_bbox_right(sprite_evolve)-sprite_get_bbox_left(sprite_evolve);
+     
+     }
+     if(!collision_rectangle(x-mask_largeur/2+2, y-mask_hauteur/2+2, x+mask_largeur/2+2, y+mask_hauteur/2+2, obj_decor,true,true)){
+        spd=3;
+        sprite_index =  sprite_evolve;
+        transform =0;
+     }
+}
+
+//Player mouvement
 hspeed = spd * (keyboard_check(vk_right) - keyboard_check(vk_left));
 vspeed = spd * (keyboard_check(vk_down) - keyboard_check(vk_up));
 
@@ -83,7 +110,7 @@ if(keyboard_check(vk_up))//Player going up
     back=1;
     if(lvl==1){
         sprite_index=spr_player1_face//_dos;
-    }else if(lvl==2){
+    }else if(lvl==2 &amp;&amp; transform ==0){
         sprite_index=spr_player2_dos;
      }
 }
@@ -92,8 +119,34 @@ if(keyboard_check(vk_down))//Player going bot
     back=0; 
     if(lvl==1){
         sprite_index=spr_player1_face;
-    }else if(lvl==2){
+    }else if(lvl==2 &amp;&amp; transform==0){
         sprite_index=spr_player2_face;
+     }
+}
+if(keyboard_check(vk_left))//Player going left
+{
+    if(back=0){
+        if(lvl==1){
+        sprite_index=spr_player1_face//_dos;
+        }else if(lvl==2 &amp;&amp; transform ==0){
+            sprite_index=spr_player2_face;
+        }
+    }else{
+        if(lvl==1){
+        sprite_index=spr_player1_face//_dos;
+        }else if(lvl==2 &amp;&amp; transform ==0){
+            sprite_index=spr_player2_dos;
+        }
+    }
+    
+}
+if(keyboard_check(vk_right))//Player going right
+{
+    back=1;
+    if(lvl==1){
+        sprite_index=spr_player1_face//_dos;
+    }else if(lvl==2 &amp;&amp; transform ==0){
+        sprite_index=spr_player2_dos;
      }
 }
 if(keyboard_check(vk_nokey))//Player stop moving
@@ -102,7 +155,7 @@ if(keyboard_check(vk_nokey))//Player stop moving
     {
         if(lvl==1){
             sprite_index=spr_player1_face_imobile;//dos_imobile;
-        }else if(lvl==2){
+        }else if(lvl==2 &amp;&amp; transform ==0){
             sprite_index=spr_player2_dos_imobile;
         }
     }
@@ -110,25 +163,10 @@ if(keyboard_check(vk_nokey))//Player stop moving
     {
         if(lvl==1){     
             sprite_index=spr_player1_face_imobile;
-        }else if(lvl==2){
+        }else if(lvl==2 &amp;&amp; transform==0){
             sprite_index=spr_player2_face_imobile;
         }
     }
-}
-
-if(lvl=2 &amp;&amp; sprite_index != spr_player2_dos &amp;&amp; sprite_index!= spr_player2_dos_imobile &amp;&amp; 
-    sprite_index!=spr_player2_face &amp;&amp; sprite_index!=spr_player2_face_imobile){
-     if(back==0){
-        if(!collision_rectangle(25, 28, 25, 28, obj_decor,true,true)){
-        spd=4;
-        sprite_index =  spr_player2_face_imobile;
-       }
-     }
-     if(back=1){
-       if(!collision_rectangle(25,28,25,28,obj_decor,true,true)){
-            sprite_index =  spr_player2_dos_imobile;
-         }
-     }
 }
     
 
@@ -224,7 +262,7 @@ if !place_free(x+hspeed,y+vspeed)
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>sound_eat_enemy</sound>
+            <sound>-100</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -268,6 +306,8 @@ xpMaxLvl = lvl*xpCap;
 if(xp&gt;=xpMaxLvl){
     lvl +=1;
     xp = xp - xpMaxLvl;
+    transform=1;
+    sprite_index=spr_player_evolution_to_2
     /*if(lvl==2){
         
         spd=4;
@@ -333,7 +373,7 @@ global.monsterCounter -= 1;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>sound_roar</sound>
+            <sound>-100</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -458,7 +498,7 @@ global.monsterCounter -= 1;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>sound_eaten</sound>
+            <sound>-100</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -496,7 +536,7 @@ global.monsterCounter -= 1;
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>rm_gameOver</room>
+            <room>-100</room>
           </argument>
         </arguments>
       </action>
