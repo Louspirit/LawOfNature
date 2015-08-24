@@ -24,6 +24,7 @@
       <sprite>sprites\spr_player2_dos</sprite>
       <sprite>sprites\spr_player2_dos_imobile</sprite>
       <sprite>sprites\spr_player2_face</sprite>
+      <sprite>sprites\sprite27</sprite>
       <sprite>sprites\spr_player2_face_imobile</sprite>
     </sprites>
     <sprites name="Objects">
