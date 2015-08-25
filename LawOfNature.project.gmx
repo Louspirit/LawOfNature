@@ -40,6 +40,8 @@
       <sprite>sprites\spr_boss_dos_imobile</sprite>
       <sprite>sprites\spr_boss_dos</sprite>
       <sprite>sprites\spr_player4_face_imobile</sprite>
+      <sprite>sprites\spr_player4_dos_imobile</sprite>
+      <sprite>sprites\spr_player4_dos</sprite>
       <sprite>sprites\spr_player4_face</sprite>
     </sprites>
     <sprites name="Objects">
