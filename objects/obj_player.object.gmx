@@ -80,11 +80,7 @@ if(sprite_index=spr_player_evolution_to_2){
      if(back==0){
      sprite_evolve =  spr_player2_face_imobile;
      mask_hauteur=sprite_get_bbox_bottom(sprite_evolve)-sprite_get_bbox_top(sprite_evolve);
-     //mask_hauteur=56;
      mask_largeur=sprite_get_bbox_right(sprite_evolve)-sprite_get_bbox_left(sprite_evolve);
-     //mask_largeur=50;
-     
-        //if(!collision_rectangle(x-25+2, y-28+2, x+25+2, y+28+2, obj_decor,true,true)){
      }
      if(back=1){
      sprite_evolve =  spr_player2_dos_imobile;
@@ -93,7 +89,6 @@ if(sprite_index=spr_player_evolution_to_2){
      
      }
      if(!collision_rectangle(x-mask_largeur/2+2, y-mask_hauteur/2+2, x+mask_largeur/2+2, y+mask_hauteur/2+2, obj_decor,true,true)){
-        spd=3;
         sprite_index =  sprite_evolve;
         transform =0;
      }
@@ -104,11 +99,7 @@ if(sprite_index=spr_player_evolution_to_3){
      if(back==0){
      sprite_evolve =  spr_player3_face_imobile;
      mask_hauteur=sprite_get_bbox_bottom(sprite_evolve)-sprite_get_bbox_top(sprite_evolve);
-     //mask_hauteur=56;
      mask_largeur=sprite_get_bbox_right(sprite_evolve)-sprite_get_bbox_left(sprite_evolve);
-     //mask_largeur=50;
-     
-        //if(!collision_rectangle(x-25+2, y-28+2, x+25+2, y+28+2, obj_decor,true,true)){
      }
      if(back=1){
      sprite_evolve =  spr_player3_dos_imobile;
@@ -117,7 +108,6 @@ if(sprite_index=spr_player_evolution_to_3){
      
      }
      if(!collision_rectangle(x-mask_largeur/2+2, y-mask_hauteur/2+2, x+mask_largeur/2+2, y+mask_hauteur/2+2, obj_decor,true,true)){
-        spd=3;
         sprite_index =  sprite_evolve;
         transform =0;
      }
@@ -128,11 +118,7 @@ if(sprite_index=spr_player_evolution_to_4){
      if(back==0){
      sprite_evolve =  spr_player4_face_imobile;
      mask_hauteur=sprite_get_bbox_bottom(sprite_evolve)-sprite_get_bbox_top(sprite_evolve);
-     //mask_hauteur=56;
      mask_largeur=sprite_get_bbox_right(sprite_evolve)-sprite_get_bbox_left(sprite_evolve);
-     //mask_largeur=50;
-     
-        //if(!collision_rectangle(x-25+2, y-28+2, x+25+2, y+28+2, obj_decor,true,true)){
      }
      if(back=1){
      sprite_evolve =  spr_player4_dos_imobile;
@@ -676,7 +662,7 @@ global.monsterCounter -= 1;
           </argument>
           <argument>
             <kind>3</kind>
-            <string>0</string>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
