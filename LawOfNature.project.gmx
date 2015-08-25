@@ -14,13 +14,16 @@
       <sprite>sprites\spr_lapin_cote_gauche</sprite>
       <sprite>sprites\spr_lapin</sprite>
       <sprite>sprites\spr_arbre_mechant</sprite>
+      <sprite>sprites\spr_arbre_mechant_dos</sprite>
       <sprite>sprites\spr_lapin_cote_droit</sprite>
       <sprite>sprites\spr_lapin_face</sprite>
       <sprite>sprites\spr_lapin_dos</sprite>
       <sprite>sprites\spr_champignon</sprite>
+      <sprite>sprites\spr_champignon_dos</sprite>
       <sprite>sprites\spr_player1_face_imobile</sprite>
       <sprite>sprites\spr_player1_face</sprite>
       <sprite>sprites\spr_poisson</sprite>
+      <sprite>sprites\spr_poisson_dos</sprite>
       <sprite>sprites\spr_player2_dos</sprite>
       <sprite>sprites\spr_player2_dos_imobile</sprite>
       <sprite>sprites\spr_player2_face</sprite>

@@ -20,6 +20,6 @@
   <width>146</width>
   <height>114</height>
   <frames>
-    <frame index="0">images\spr_arbre_mechant_0.png</frame>
+    <frame index="0">images\spr_arbre_mechant_dos_0.png</frame>
   </frames>
 </sprite>
