@@ -160,18 +160,32 @@ if(keyboard_check(vk_up))//Player going up
     back=1;
     if(lvl==1){
         sprite_index=spr_player1_face//_dos;
-    }else if(lvl==2 &amp;&amp; transform ==0){
+    }
+    if(lvl==2 &amp;&amp; transform ==0){
         sprite_index=spr_player2_dos;
-     }
+    }
+    if(lvl==3 &amp;&amp; transform ==0){
+        sprite_index=spr_player3_dos;
+    }
+    if(lvl==4 &amp;&amp; transform ==0){
+        sprite_index=spr_player4_dos;
+    }
 }
 if(keyboard_check(vk_down))//Player going bot
 {
     back=0; 
     if(lvl==1){
         sprite_index=spr_player1_face;
-    }else if(lvl==2 &amp;&amp; transform==0){
-        sprite_index=spr_player2_face;
-     }
+    }
+    if(lvl==2 &amp;&amp; transform ==0){
+        sprite_index=spr_player2_dos;
+    }
+    if(lvl==3 &amp;&amp; transform ==0){
+        sprite_index=spr_player3_dos;
+    }
+    if(lvl==4 &amp;&amp; transform ==0){
+        sprite_index=spr_player4_dos;
+    }
 }
 if(keyboard_check(vk_left))//Player going left
 {
@@ -360,14 +374,17 @@ if(xp&gt;=xpMaxLvl){
     if lvl=2 
     {
     sprite_index=spr_player_evolution_to_2
+    spd=5;
     }
     if lvl=3 
     {
     sprite_index=spr_player_evolution_to_3
+    spd=4;
     }
     if lvl=4 
     {
     sprite_index=spr_player_evolution_to_4
+    spd=3;
     }
 }
 global.monsterCounter -= 1;
@@ -392,6 +409,27 @@ global.monsterCounter -= 1;
           <argument>
             <kind>0</kind>
             <string>global.monsterCounter == 0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>action_create_object(obj_draw_victory , view_xview[0]+ (view_wview[0] / 2), view_yview[0] + (view_hview[0] / 2));
+</string>
           </argument>
         </arguments>
       </action>
@@ -454,27 +492,6 @@ global.monsterCounter -= 1;
           <argument>
             <kind>4</kind>
             <string>11</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>action_create_object(obj_draw_victory , view_xview[0]+ (view_wview[0] / 2), view_yview[0] + (view_hview[0] / 2));
-</string>
           </argument>
         </arguments>
       </action>
