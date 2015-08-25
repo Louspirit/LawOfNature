@@ -312,7 +312,7 @@ if !place_free(x+hspeed,y+vspeed)
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>-100</sound>
+            <sound>sound_eat_enemy</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -357,16 +357,18 @@ if(xp&gt;=xpMaxLvl){
     lvl +=1;
     xp = xp - xpMaxLvl;
     transform=1;
+    if lvl=2 
+    {
     sprite_index=spr_player_evolution_to_2
-    /*if(lvl==2){
-        
-        spd=4;
-        if(back==0){
-            sprite_index =  spr_player2_face;
-         }else{
-            sprite_index =  spr_player2_dos_imobile;
-         }
-    }*/
+    }
+    if lvl=3 
+    {
+    sprite_index=spr_player_evolution_to_3
+    }
+    if lvl=4 
+    {
+    sprite_index=spr_player_evolution_to_4
+    }
 }
 global.monsterCounter -= 1;
 </string>
@@ -423,7 +425,7 @@ global.monsterCounter -= 1;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>-100</sound>
+            <sound>sound_roar</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -548,7 +550,7 @@ global.monsterCounter -= 1;
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>-100</sound>
+            <sound>sound_eaten</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -586,7 +588,7 @@ global.monsterCounter -= 1;
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>-100</room>
+            <room>rm_gameOver</room>
           </argument>
         </arguments>
       </action>
