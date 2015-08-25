@@ -88,7 +88,7 @@ if(sprite_index=spr_player_evolution_to_2){
      mask_largeur=sprite_get_bbox_right(sprite_evolve)-sprite_get_bbox_left(sprite_evolve);
      
      }
-     if(!collision_rectangle(x-mask_largeur/2+2, y-mask_hauteur/2+2, x+mask_largeur/2+2, y+mask_hauteur/2+2, obj_decor,true,true)){
+     if(!collision_rectangle(x-mask_largeur/2-2, y-mask_hauteur/2-2, x+mask_largeur/2+2, y+mask_hauteur/2+2, obj_decor,true,true)){
         sprite_index =  sprite_evolve;
         transform =0;
      }
@@ -107,7 +107,7 @@ if(sprite_index=spr_player_evolution_to_3){
      mask_largeur=sprite_get_bbox_right(sprite_evolve)-sprite_get_bbox_left(sprite_evolve);
      
      }
-     if(!collision_rectangle(x-mask_largeur/2+2, y-mask_hauteur/2+2, x+mask_largeur/2+2, y+mask_hauteur/2+2, obj_decor,true,true)){
+     if(!collision_rectangle(x-mask_largeur/2-2, y-mask_hauteur/2-2, x+mask_largeur/2+2, y+mask_hauteur/2+2, obj_decor,true,true)){
         sprite_index =  sprite_evolve;
         transform =0;
      }
@@ -126,7 +126,7 @@ if(sprite_index=spr_player_evolution_to_4){
      mask_largeur=sprite_get_bbox_right(sprite_evolve)-sprite_get_bbox_left(sprite_evolve);
      
      }
-     if(!collision_rectangle(x-mask_largeur/2+2, y-mask_hauteur/2+2, x+mask_largeur/2+2, y+mask_hauteur/2+2, obj_decor,true,true)){
+     if(!collision_rectangle(x-mask_largeur/2-2, y-mask_hauteur/2-2, x+mask_largeur/2+2, y+mask_hauteur/2+2, obj_decor,true,true)){
         sprite_index =  sprite_evolve;
         transform =0;
      }
