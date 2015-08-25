@@ -83,6 +83,7 @@
       <object>objects\obj_player</object>
       <object>objects\obj_enemy</object>
       <object>objects\obj_arbre_mechant</object>
+      <object>objects\obje_boss</object>
       <object>objects\obj_champignon</object>
       <object>objects\obj_lapin</object>
       <object>objects\obj_poisson</object>
