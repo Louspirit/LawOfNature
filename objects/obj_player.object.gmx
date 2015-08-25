@@ -141,7 +141,6 @@ if(sprite_index=spr_player_evolution_to_4){
      
      }
      if(!collision_rectangle(x-mask_largeur/2+2, y-mask_hauteur/2+2, x+mask_largeur/2+2, y+mask_hauteur/2+2, obj_decor,true,true)){
-        spd=3;
         sprite_index =  sprite_evolve;
         transform =0;
      }
@@ -178,13 +177,13 @@ if(keyboard_check(vk_down))//Player going bot
         sprite_index=spr_player1_face;
     }
     if(lvl==2 &amp;&amp; transform ==0){
-        sprite_index=spr_player2_dos;
+        sprite_index=spr_player2_face;
     }
     if(lvl==3 &amp;&amp; transform ==0){
-        sprite_index=spr_player3_dos;
+        sprite_index=spr_player3_face;
     }
     if(lvl==4 &amp;&amp; transform ==0){
-        sprite_index=spr_player4_dos;
+        sprite_index=spr_player4_face;
     }
 }
 if(keyboard_check(vk_left))//Player going left
@@ -194,24 +193,48 @@ if(keyboard_check(vk_left))//Player going left
         sprite_index=spr_player1_face//_dos;
         }else if(lvl==2 &amp;&amp; transform ==0){
             sprite_index=spr_player2_face;
+        }else if(lvl==3 &amp;&amp; transform ==0){
+            sprite_index=spr_player3_face;
+        }else if(lvl==4 &amp;&amp; transform ==0){
+            sprite_index=spr_player4_face;
         }
     }else{
         if(lvl==1){
         sprite_index=spr_player1_face//_dos;
         }else if(lvl==2 &amp;&amp; transform ==0){
             sprite_index=spr_player2_dos;
+        }else if(lvl==3 &amp;&amp; transform ==0){
+            sprite_index=spr_player3_dos;
+        }else if(lvl==4 &amp;&amp; transform ==0){
+            sprite_index=spr_player4_dos;
         }
     }
     
 }
 if(keyboard_check(vk_right))//Player going right
 {
-    back=1;
+  if(back=0){
+        if(lvl==1){
+        sprite_index=spr_player1_face//_dos;
+        }else if(lvl==2 &amp;&amp; transform ==0){
+            sprite_index=spr_player2_face;
+        }else if(lvl==3 &amp;&amp; transform ==0){
+            sprite_index=spr_player3_face;
+        }else if(lvl==4 &amp;&amp; transform ==0){
+            sprite_index=spr_player4_face;
+        }
+  }else{
     if(lvl==1){
         sprite_index=spr_player1_face//_dos;
     }else if(lvl==2 &amp;&amp; transform ==0){
         sprite_index=spr_player2_dos;
+     }else if(lvl==3 &amp;&amp; transform ==0){
+        sprite_index=spr_player3_dos;
+     }else if(lvl==4 &amp;&amp; transform ==0){
+        sprite_index=spr_player4_dos;
      }
+  }
+
 }
 if(keyboard_check(vk_nokey))//Player stop moving
 {
@@ -221,6 +244,10 @@ if(keyboard_check(vk_nokey))//Player stop moving
             sprite_index=spr_player1_face_imobile;//dos_imobile;
         }else if(lvl==2 &amp;&amp; transform ==0){
             sprite_index=spr_player2_dos_imobile;
+        }else if(lvl==3 &amp;&amp; transform ==0){
+            sprite_index=spr_player3_dos_imobile;
+        }else if(lvl==4 &amp;&amp; transform ==0){
+            sprite_index=spr_player4_dos_imobile;
         }
     }
     else
@@ -229,6 +256,10 @@ if(keyboard_check(vk_nokey))//Player stop moving
             sprite_index=spr_player1_face_imobile;
         }else if(lvl==2 &amp;&amp; transform==0){
             sprite_index=spr_player2_face_imobile;
+        }else if(lvl==3 &amp;&amp; transform==0){
+            sprite_index=spr_player3_face_imobile;
+        }else if(lvl==4 &amp;&amp; transform==0){
+            sprite_index=spr_player4_face_imobile;
         }
     }
 }
@@ -374,17 +405,17 @@ if(xp&gt;=xpMaxLvl){
     if lvl=2 
     {
     sprite_index=spr_player_evolution_to_2
-    spd=7;
+    spd=5;
     }
     if lvl=3 
     {
     sprite_index=spr_player_evolution_to_3
-    spd=7;
+    spd=4;
     }
     if lvl=4 
     {
     sprite_index=spr_player_evolution_to_4
-    spd=7;
+    spd=4;
     }
 }
 global.monsterCounter -= 1;
