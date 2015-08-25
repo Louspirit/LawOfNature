@@ -115,6 +115,7 @@
     <room>rooms\rm_level3</room>
     <room>rooms\rm_level4</room>
     <room>rooms\rm_level5</room>
+    <room>rooms\rm_level6</room>
     <rooms name="screens">
       <room>rooms\rm_theEnd</room>
       <room>rooms\rm_gameOver</room>
