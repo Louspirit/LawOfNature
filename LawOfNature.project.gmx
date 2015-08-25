@@ -120,7 +120,6 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_poster</room>
     <room>rooms\rm_level1</room>
     <room>rooms\rm_level2</room>
     <room>rooms\rm_level3</room>
@@ -128,6 +127,7 @@
     <room>rooms\rm_level5</room>
     <room>rooms\rm_level6</room>
     <rooms name="screens">
+      <room>rooms\rm_poster</room>
       <room>rooms\rm_theEnd</room>
       <room>rooms\rm_gameOver</room>
     </rooms>
