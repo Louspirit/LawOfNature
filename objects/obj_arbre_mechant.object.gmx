@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>xp=8;
+            <string>xp=16;
 lvl=3;
 spd=4;
 aggroRange = 500;

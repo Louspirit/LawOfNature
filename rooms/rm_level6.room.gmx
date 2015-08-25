@@ -448,6 +448,8 @@ global.currentRoom=rm_level6;</code>
     <instance objName="obj_tall_grass" x="800" y="384" name="inst_05E4727A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tall_grass" x="1056" y="480" name="inst_885181F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_champignon" x="832" y="288" name="inst_97105E61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tall_grass" x="480" y="320" name="inst_07176E51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tall_grass" x="576" y="320" name="inst_2453E1E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
