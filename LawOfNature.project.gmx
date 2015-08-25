@@ -8,6 +8,7 @@
     <sound>sound\sound_eat_enemy</sound>
     <sound>sound\sound_eaten</sound>
     <sound>sound\sound_roar</sound>
+    <sound>sound\sound_music</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Characters">

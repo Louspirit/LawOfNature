@@ -405,7 +405,7 @@ if(xp&gt;=xpMaxLvl){
     if lvl=2 
     {
     sprite_index=spr_player_evolution_to_2
-    spd=5;
+    spd=6;
     }
     if lvl=3 
     {
@@ -653,6 +653,32 @@ global.monsterCounter -= 1;
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="7" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>211</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>sound_music</sound>
+          </argument>
+          <argument>
+            <kind>3</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>
